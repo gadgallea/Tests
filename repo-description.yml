@@ -1,0 +1,8 @@
+Name: SampleRepo
+Modules:
+- Name: Microservice1
+  Path: src/services
+  Template: C:\gad\dev\TheVops\templates\dotnet\clean-architecture-microservice-template.yml
+- Name: Microservice2
+  Path: src/services
+  Template: C:\gad\dev\TheVops\templates\dotnet\clean-architecture-microservice-template.yml
