@@ -28,5 +28,5 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         context: src/services/Microservice1
-        tags: Microservice1:latest
+        tags: microservice1:latest
         push: false
