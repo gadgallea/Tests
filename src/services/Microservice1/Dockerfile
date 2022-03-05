@@ -4,10 +4,10 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["Microservice.Core/Microservice.Core.csproj", "Microservice.Core/ "]
-COPY ["Microservice.Core.Tests/Microservice.Core.Tests.csproj", "Microservice.Core.Tests/ "]
-COPY ["Microservice.Infrastructure/Microservice.Infrastructure.csproj", "Microservice.Infrastructure/ "]
-COPY ["Microservice.Api/Microservice.Api.csproj", "Microservice.Api/ "]
+COPY ["Microservice.Core/Microservice.Core.csproj", "Microservice.Core/"]
+COPY ["Microservice.Core.Tests/Microservice.Core.Tests.csproj", "Microservice.Core.Tests/"]
+COPY ["Microservice.Infrastructure/Microservice.Infrastructure.csproj", "Microservice.Infrastructure/"]
+COPY ["Microservice.Api/Microservice.Api.csproj", "Microservice.Api/"]
 COPY ["Microservice.Api/nuget.config", "Microservice.Api/"]
 
 RUN dotnet restore "Microservice.Api/Microservice.Api.csproj"
