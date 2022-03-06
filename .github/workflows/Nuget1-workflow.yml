@@ -25,5 +25,5 @@ jobs:
       run: dotnet pack src/shared/Nuget1/TestNuget/TestNuget.csproj -c Release --no-build -o .
     - name: push
       run: |
-        dotnet nuget add source --username gadgallea ${{ secrets.PUB_SECRET }} --store-password-in-clear-text --name github "https://nuget.pkd.github.com/gadgallea/index.json"
+        dotnet nuget add source -u gadgallea -p ${{ secrets.PUB_SECRET }} --store-password-in-clear-text --name github "https://nuget.pkd.github.com/gadgallea/index.json"
         dotnet push ./*.nupkg --skip-duplicate --source "github"
