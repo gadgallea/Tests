@@ -22,4 +22,4 @@ jobs:
     - name: Test
       run: dotnet test src/shared/Nuget1/TestNuget.Tests/TestNuget.Tests.csproj
     - name: Pack
-      run: dotnet pack src/shared/Nuget1/TestNuget/TestNuget.csproj -c --no-build -o .
+      run: dotnet pack src/shared/Nuget1/TestNuget/TestNuget.csproj -c Release --no-build -o .
