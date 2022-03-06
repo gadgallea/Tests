@@ -1,5 +1,5 @@
 Name: SampleRepo
 Modules:
-- Name: Microservice1
-  Path: src\services
-  Template: C:\gad\dev\TheVops\templates\dotnet\clean-architecture-microservice-template.yml
+- Name: Nuget1
+  Path: src\shared
+  Template: C:\gad\dev\TheVops\templates\dotnet\nuget-template.yml
