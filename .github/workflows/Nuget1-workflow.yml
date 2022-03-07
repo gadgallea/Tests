@@ -24,4 +24,4 @@ jobs:
     - name: push
       run: |
         dotnet nuget add source -u gadgallea -p ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/gadgallea/index.json"
-        dotnet publish *.nupkg -s "github"
+        dotnet publish *.nupkg --source "github"
